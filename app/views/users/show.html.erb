@@ -1,0 +1,8 @@
+<h1><%= @user.name %></h1>
+<p><%= @user.bio %></p>
+
+<h3>Posts</h3>
+<% @user.posts.each do |post| %>
+  <p><strong><%= post.title %></strong><br>
+  <%= post.body %></p>
+<% end %>
